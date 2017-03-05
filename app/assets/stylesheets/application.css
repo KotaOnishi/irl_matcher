@@ -1,0 +1,160 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+body {
+  background-color: #f8ece0;
+  width: 930px;
+  font-size: 14px;
+  margin: 0 auto;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  padding: 10px 0px;
+  margin: 0;
+}
+
+header {
+  /*background-colorプロパティを削除*/
+  /*margin-top: 10px;*/
+  width: 930px;
+  float: left;
+  background-color: #fff;
+}
+
+
+.title {
+  width: 300px;
+  margin-left: 30px;
+  font-family: fantasy;
+  float: left;
+}
+
+.nav-top {
+  width: 930px;
+  background-color: #9c1c42;
+  height: 10px;
+}
+
+.nav-body {
+  width: 930px;
+  height: 90px;
+  background-color: #fff;
+  padding: 10px 0px;
+}
+
+.nav-img {
+  position:relative;
+  left: 20px;
+  top:20px;
+  /*padding-left: 100px;*/
+  width: 103px;
+  height: 53px;
+  margin: 0 auto;
+  background-image: url(img/irl_logo.png);
+  background-position: center;
+  background-size: cover;
+  float: left;
+}
+
+.navbar {
+  width: 530px;
+  margin: 0 auto;
+  padding: 20px 5px;
+  float: right;
+}
+
+.nav-button {
+
+}
+
+ul {
+  float: right;
+  margin: 0 auto;
+  padding: 0px;
+  list-style: none;
+}
+
+
+ul li {
+  width: 90px;
+  /*margin: 0px;*/
+  padding-right: 0px;
+  float: left;
+}
+
+footer {
+  /*background-colorプロパティを削除*/
+  /*heightプロパティを削除*/
+  text-align: right;
+  width: 930px;
+  background-color: #9c1c42;
+  height: 40px;
+}
+
+footer p {
+  margin: 0px 20px;
+}
+
+
+.nav-button {
+  border: 2px solid #9c1c42;
+  border-radius: 10px;
+  background-color: rgba(0,0,0,0);
+  color: #9c1c42;
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+  width: 80px;
+  line-height: 50px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+}
+.nav-button:hover {
+  border:2px solid #9c1c42;
+  background-color: #9c1c42;
+  color: #fff;
+}
+
+.index-body {
+  width: 930px;
+  /*height: 1500px; //仮*/
+}
+
+.index-body p {
+  text-align: center;
+  /*margin: 0 auto;*/
+}
+
+.nav-image {
+  width: 930px;
+  height: 550px;
+  background-image: url(img/shukatsu-image.jpg);
+  background-position: center;
+  background-size: cover;
+}
+/*
+.image-sentence {
+  margin: 50px, 10px, 50px, 600px;
+}*/
+
+.nav-image p {
+  width: 400px;
+  font-size: 35px;
+  font-family: HiraKakuProN-W6;
+  position:relative;
+  left: 350px;
+  top: 360px;
+  white-space: nowrap;
+}
+

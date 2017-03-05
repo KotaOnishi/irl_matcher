@@ -1,0 +1,64 @@
+
+
+/*.mypage-back-img {
+  width: 930px;
+  height: 300px;
+  background-image: url(img/cover_city.jpg);
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+  float: center;
+}*/
+
+.mypage-back-img {
+  background: url(img/cover_city.jpg) no-repeat center;
+  background-size: cover;
+  position: relative;
+  width: 930px;
+  height: 300px;
+}
+
+.mypage-back-img::before{
+  background-color: rgba(0,0,0,0.4);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: ' ';
+}
+
+.box{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+
+.my_image {
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  border: 3px solid #9c1c42;
+  margin: 225px auto;
+  background-image: url(img/worker-1-img.JPG);
+  background-position: center;
+  background-size: cover;
+  /*float: left;*/
+}
+
+.mypage {
+  /*border: 2px solid #9c1c42;*/
+  width: 930px;
+  height: 1200px;
+  background-color: #fff;
+  /*padding: 20px ;*/
+  color: #9c1c42;
+}
+
+.profile {
+  width: 400px;
+  margin: 90px auto;
+  text-align: center;
+}
+
