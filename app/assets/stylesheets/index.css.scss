@@ -17,9 +17,9 @@
 }
 
 .worker-list{
-   width: 850px;
+   width: 890px;
    background-color: #E6E6FA;
-   padding: 10px 40px;
+   padding: 10px 20px;
  }
 
  .clearfix:after {
@@ -31,8 +31,8 @@
 .worker-1 {
   width: 270px;
   height: 300px;
-  background-color: #EE82EE;
-  margin-right: 20px;
+  background-color: #483D8B;
+  margin: 20px 10px auto;
   float: left;
 }
 
@@ -63,43 +63,3 @@
   float: left;
 }
 
-.worker-2 {
-  width: 270px;
-  height: 300px;
-  background-color: #C71585;
-  margin-right: 20px;
-  float: left;
-}
-
-.worker-3 {
-  width: 270px;
-  height: 300px;
-  background-color: #9400D3;
-  float: left;
-}
-
-.worker-4 {
-  width: 270px;
-  height: 300px;
-  background-color: #483D8B;
-  margin-top: 20px;
-  margin-right: 20px;
-  float: left;
-}
-
-.worker-5 {
-  width: 270px;
-  height: 300px;
-  background-color: #9370DB;
-  margin-top: 20px;
-  margin-right: 20px;
-  float: left;
-}
-
-.worker-6 {
-  width: 270px;
-  height: 300px;
-  background-color: #00008B;
-  margin-top: 20px;
-  float: left;
-}

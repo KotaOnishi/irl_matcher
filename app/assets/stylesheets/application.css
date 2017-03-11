@@ -69,15 +69,12 @@ header {
 }
 
 .navbar {
-  width: 530px;
+  width: 600px;
   margin: 0 auto;
   padding: 20px 5px;
   float: right;
 }
 
-.nav-button {
-
-}
 
 ul {
   float: right;
@@ -88,7 +85,7 @@ ul {
 
 
 ul li {
-  width: 90px;
+  width: 130px;
   /*margin: 0px;*/
   padding-right: 0px;
   float: left;
@@ -109,6 +106,7 @@ footer p {
 
 
 .nav-button {
+  /*padding: 10px;*/
   border: 2px solid #9c1c42;
   border-radius: 10px;
   background-color: rgba(0,0,0,0);
@@ -116,7 +114,7 @@ footer p {
   text-align: center;
   font-size: 13px;
   font-weight: bold;
-  width: 80px;
+  width: 110px;
   line-height: 50px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
 }

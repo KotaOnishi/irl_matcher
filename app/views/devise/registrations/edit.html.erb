@@ -4,8 +4,49 @@
   <%= devise_error_messages! %>
 
   <div class="field">
-    <%= f.label :email %><br />
+    <%= f.label :メールアドレス %><br />
     <%= f.email_field :email, autofocus: true %>
+  </div>
+
+<!-- 追加した編集ポイント -->
+  <div class="field">
+    <%= f.label :名前 %> <br />
+    <%= f.text_field :name, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :画像 %> <br />
+    <%= f.text_field :image_url, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :会社 %> <br />
+    <%= f.text_field :company, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :大学 %> <br />
+    <%= f.text_field :university, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :高校 %> <br />
+    <%= f.text_field :high_school, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :卒業年度 %> <br />
+    <%= f.select :grad_year, [["2012年度", "2012"], ["2013年度", "2013"], ["2014年度", "2014"], ["2015年度", "2015"]] %>
+  </div>
+
+  <div class="field">
+    <%= f.label :担当チューター %> <br />
+    <%= f.select :tutor, [["河野", "0"], ["大西", "1"], ["富田", "2"], ["後藤", "3"]] %>
+  </div>
+
+  <div class="field">
+    <%= f.label :学生or社会人 %> <br />
+    <%= f.select :status, [["学生", "0"], ["社会人", "1"]] %>
   </div>
 
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>

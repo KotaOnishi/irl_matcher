@@ -8,29 +8,42 @@
               <li><input type="button" value="学生登録" class="nav-button" style="cursor: pointer"></li>
               <li><input type="button" value="社会人登録" class="nav-button" style="cursor: pointer"></li>
               <li><input type="button" value="ログイン" class="nav-button" style="cursor: pointer"></li>
-              <li><input type="button" onclick="location.href='/mypage'" value="マイページ" class="nav-button" style="cursor: pointer"></li>
+              <li><input type="button" onclick="location.href='/request'" value="マイページ" class="nav-button" style="cursor: pointer"></li>
             </ul>
             </div>
             </div>
   <div class="mypage">
     <div class="mypage-back-img">
       <div class="box">
-        <div class="my_image">
-        </div>
+              <%= image_tag @image_url, class: "my_image" %>
       </div>
     </div>
     <div class="profile">
       <div class="name">
-        <h2>大西鴻太</h2>
+        <h2><%= @user.name %></h2>
         <h3>
-          リクルートライフスタイル・内定者<br>
-          慶応義塾大学　理工学部<br>
-          千葉県立東葛飾高等学校<br>
-          2013年度卒業<br>
+          <%= @user.company %><br>
+          <%= @user.university %>　(理工学部)<br>
+
+      <% if user_signed_in? && current_user.id == @user.id %>
+
+          <%= @user.high_school %><br>
+
+      <% end %>
+
+          <%= @user.grad_year %>年度卒業<br>
           担当チューター：河野<br>
         </h3>
       </div>
     </div>
+
+<%= form_for(@matching) do |f| %>
+
+
+<% end %>
+
   </div>
+
 </body>
 
+<!-- 'worker-1-img.JPG' -->

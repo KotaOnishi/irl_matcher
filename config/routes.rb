@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-  devise_for :students
+  devise_for :users
   resources :top
-  get 'mypage' => 'top#mypage'
+  resources :matchings
+  get 'users/:id' =>'users#mypage'
+  # get '/request' =>'top#request'
   root to: "top#index"
 end

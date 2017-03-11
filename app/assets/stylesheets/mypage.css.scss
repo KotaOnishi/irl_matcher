@@ -35,7 +35,7 @@
 }
 
 
-.my_image {
+/*.my_image {
   width: 150px;
   height: 150px;
   border-radius: 150px;
@@ -45,10 +45,20 @@
   background-position: center;
   background-size: cover;
   /*float: left;*/
+/*}*/
+
+
+.my_image {
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  border: 3px solid #9c1c42;
+  margin: 225px auto;
 }
 
+
 .mypage {
-  /*border: 2px solid #9c1c42;*/
+  /*border: 2px solid #9c1c42;
   width: 930px;
   height: 1200px;
   background-color: #fff;
