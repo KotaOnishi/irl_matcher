@@ -23,7 +23,7 @@
         <h2><%= @user.name %></h2>
         <h3>
           <%= @user.company %><br>
-          <%= @user.university %>　(理工学部)<br>
+          <%= @user.university %><br>
 
       <% if user_signed_in? && current_user.id == @user.id %>
 
@@ -39,6 +39,7 @@
 
 <%= form_for(@matching) do |f| %>
 
+  
 
 <% end %>
 
