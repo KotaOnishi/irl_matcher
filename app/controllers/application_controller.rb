@@ -14,6 +14,7 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.permit(:sign_up, keys: [:grad_year])
     devise_parameter_sanitizer.permit(:sign_up, keys: [:tutor])
     devise_parameter_sanitizer.permit(:sign_up, keys: [:status])
+    devise_parameter_sanitizer.permit(:sign_up, keys: [:avatar])
 
 
     devise_parameter_sanitizer.permit(:account_update, keys: [:name])
@@ -23,6 +24,6 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.permit(:account_update, keys: [:high_school])
     devise_parameter_sanitizer.permit(:account_update, keys: [:grad_year])
     devise_parameter_sanitizer.permit(:account_update, keys: [:tutor])
-    devise_parameter_sanitizer.permit(:account_update, keys: [:status])
+    devise_parameter_sanitizer.permit(:account_update, keys: [:avatar])
   end
 end

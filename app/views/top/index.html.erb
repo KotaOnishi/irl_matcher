@@ -118,30 +118,57 @@
 
     <!-- 社会人一覧 -->
     <div class="worker-list clearfix">
-      <h2>一覧</h2>
+      <h1>一覧</h1>
+
+
+<% if user_signed_in? && current_user.status == 0 %>
 
 <% @workers.each do |worker| %>
 
       <div class="worker-1">
 
-        <%= image_tag "worker-1-img.JPG", class: "worker-1-img" %>
+        <div class="worker-1-img" style="background-image: url(<%= worker.avatar.url(:medium) %>);" onclick="location.href='/users/<%= worker.id %>'" style="cursor: pointer"></div>
+
 
         <div class="worker-1-detail1">
-          <a href="/users/<%= worker.id %>">詳細</a>
+          <%= worker.name %>
         </div>
 
         <div class="worker-1-detail2">
-          <%= worker.name %><br>
-          <%= worker.company %><br>
-          <%= worker.university %><br>
-          <%= worker.high_school %><br>
-          <%= worker.grad_year %>年度<br>
-          営業<br>
+          企業：<%= worker.company %><br>
+          大学：<%= worker.university %><br>
+          高校：<%= worker.high_school %><br>
+          卒業年度：<%= worker.grad_year %>年度<br>
         </div>
       </div>
 
 <% end %>
 
+<% end %>
+
+<% if user_signed_in? && current_user.status == 1 %>
+
+<% @students.each do |worker| %>
+
+      <div class="worker-1">
+
+        <div class="worker-1-img" style="background-image: url(<%= worker.avatar.url(:medium) %>);" onclick="location.href='/users/<%= worker.id %>'" style="cursor: pointer"></div>
+
+
+        <div class="worker-1-detail1">
+        <%= worker.name %>
+        </div>
+
+        <div class="worker-1-detail2">
+          大学：<%= worker.university %><br>
+          高校：<%= worker.high_school %><br>
+          卒業年度：<%= worker.grad_year %>年度<br>
+        </div>
+      </div>
+
+<% end %>
+
+<% end %>
     </div>
 
     <%# else %>
