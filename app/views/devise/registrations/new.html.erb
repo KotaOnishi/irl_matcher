@@ -14,10 +14,10 @@
     <%= f.text_field :name, autofocus: true %>
   </div>
 
-  <div class="field">
-    <%= f.label :画像 %> <br />
-    <%= f.text_field :image_url, autofocus: true %>
-  </div>
+        <p>プロフィール画像</p>
+      <div class="form-group file">
+        <%= f.file_field :avatar, class: "form-control floating-label", placeholder: "画像アップロード" %>
+      </div>
 
   <div class="field">
     <%= f.label :会社 %> <br />
